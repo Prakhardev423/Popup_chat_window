@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Chat Window</title>
+    <link rel="preconnect" href="https: //fonts.googleapis.com">
+    <link rel="preconnect" href="https: //fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <h2>Popup Chat Window</h2>
+    <button class="open-button" onclick="openform()">chat</button>
+    <div class="chat-popup" id="myform">
+        <form class="form-container">
+            <h1>Hi There!</h1>
+            <label for="msg">Ask us anything,or share your feedback.</label>
+            <textarea name="msg" required placeholder="type message..." class="phm"></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="Button" class="btn cancel" onclick="closeForm()">Close</button>
+
+        </form>
+    </div>
+    <script>
+        function openform() {
+            document.getElementById("myform").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myform").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
